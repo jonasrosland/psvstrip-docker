@@ -14,4 +14,8 @@ Strip your raw dump like this:
 
 `docker run -v /yourdumpsdirectory:/data jonasrosland/psvstrip-docker strip_psv.sh -s /data/DUMPNAME.psv`
 
+or if you're running it within the directory of the dump:
+
+`docker run -v $PWD:/data jonasrosland/psvstrip-docker strip_psv.sh -s /data/DUMPNAME.psv`
+
 Your stripped PSV file and license file will be saved in the same directory as the raw dump.
