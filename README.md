@@ -10,7 +10,7 @@ For more information see:
 
 Strip your raw dump like this:
 
-`docker pull jonasrosland/psvstrip-docker:0.1`
+`docker pull jonasrosland/psvstrip-docker`
 
 `docker run -v /yourdumpsdirectory:/data jonasrosland/psvstrip-docker strip_psv.sh -s /data/DUMPNAME.psv`
 
